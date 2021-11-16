@@ -37,7 +37,7 @@
             <Font name="Times New Roman" size="21.0" />
          </font>
       </Text>
-      <Text fx:id="text" layoutX="484.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.5">
+      <Text fx:id="text" layoutX="375.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.5">
          <font>
             <Font name="Times New Roman" size="18.0" />
          </font>

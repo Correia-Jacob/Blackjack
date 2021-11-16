@@ -395,7 +395,7 @@ public class GUIController implements Initializable {
             return false;
         }
         if (betAmount > playersMoney) {
-            text.setText( "You cannot bet $" + betAmount + ". You only have $" + playersMoney);
+            text.setText( "You only have $" + playersMoney + " to bet");
             return false;
         }
         if (betAmount <= 0) {
