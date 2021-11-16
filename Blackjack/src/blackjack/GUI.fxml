@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blackjack.GUIController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="73.0" layoutY="335.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Button fx:id="hitButton" layoutX="40.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#Hit" prefHeight="38.0" prefWidth="76.0" text="Hit">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="standButton" layoutX="144.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#Stand" text="Stand">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="375.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bet: $">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="betInput" layoutX="426.0" layoutY="373.0" onInputMethodTextChanged="#setBetAmount" prefHeight="25.0" prefWidth="151.0" />
+      <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer's Cards:" textOrigin="TOP">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Cards:">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="text" layoutX="484.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="113.5">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="375.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Money: $" wrappingWidth="113.5">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="playersMoneyText" layoutX="489.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="103.236328125">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="dealerCard1" fitHeight="115.0" fitWidth="87.0" layoutX="14.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealerCard2" fitHeight="115.0" fitWidth="87.0" layoutX="101.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealerCard3" fitHeight="115.0" fitWidth="87.0" layoutX="188.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealerCard4" fitHeight="115.0" fitWidth="87.0" layoutX="274.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCard1" fitHeight="115.0" fitWidth="87.0" layoutX="14.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCard2" fitHeight="115.0" fitWidth="87.0" layoutX="103.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCard3" fitHeight="115.0" fitWidth="87.0" layoutX="188.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCard4" fitHeight="115.0" fitWidth="87.0" layoutX="274.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerCard5" fitHeight="115.0" fitWidth="87.0" layoutX="357.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="newGameButton" layoutX="511.0" layoutY="13.0" mnemonicParsing="false" onAction="#newGame" text="New Game" />
+      <Button fx:id="loadSaveButton" layoutX="511.0" layoutY="43.0" mnemonicParsing="false" onAction="#loadSave" prefHeight="25.0" prefWidth="75.0" text="Load Save" />
+   </children>
+</AnchorPane>
